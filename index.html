@@ -44,17 +44,95 @@
       </nav>
     </header>
     <main>
-      <!-- primera seccion -->
-      <section class="container my-5 d-block" >
-        <article class="border border-secondary-subtle rounded-3 p-5 m-3 text-center">
+      <!-- primera seccion "contenedores" -->
+      <section class="container my-5 d-block">
+        <article
+          class="border border-secondary-subtle rounded-3 p-5 m-3 text-center"
+        >
           <h1>Estilos de Bootstrap</h1>
           <p>
             Una guía visual para aprender clases de diseño, espaciado y
             componentes.
           </p>
         </article>
-        <article class="border border-secondary-subtle rounded-3 p-5 text-center"><h2>Contenedores</h2>
-        <p>Un contenedor fluido en Bootstrap se crea utilizando la clase container-fluid. Este tipo de contenedor ocupa el 100% del ancho del viewport, lo que significa que se expande y contrae automáticamente para adaptarse a cualquier tamaño de pantalla. Es ideal para diseños que necesiten aprovechar al máximo el espacio horizontal disponible, sin importar el dispositivo que se esté utilizando.</p></article>
+        <article
+          class="border border-secondary-subtle rounded-3 p-5 text-center"
+        >
+          <h2>Contenedores</h2>
+          <p>
+            Un contenedor fluido en Bootstrap se crea utilizando la clase
+            container-fluid. Este tipo de contenedor ocupa el 100% del ancho del
+            viewport, lo que significa que se expande y contrae automáticamente
+            para adaptarse a cualquier tamaño de pantalla. Es ideal para diseños
+            que necesiten aprovechar al máximo el espacio horizontal disponible,
+            sin importar el dispositivo que se esté utilizando.
+          </p>
+        </article>
+      </section>
+      <!-- segunda seccion "Tipos de texto y columnas" -->
+      <section class="d-flex flex-column flex-md-row mb-2">
+        <article class="container text-center">
+          <h3>1. Estilos de Texto y Tipografía</h3>
+          <p>
+            Los títulos pueden tener una clase especial llamada display Recuerda
+            que puedes usar flexbox para trabajar con elemento de filas o
+            columnas.
+          </p>
+          <p class="display-1">Display 1</p>
+          <p class="display-6">Display 6</p>
+          <p class="text-primary fw-bold mb-1">TEXTO MAYÚSCULAS AZUL</p>
+          <p class="text-decoration-line-through fst-italic text-secondary">
+            Texto itálico tachado
+          </p>
+        </article>
+        <div class="col-md-6">
+          <div
+            class="p-4 bg-dark rounded border border-secondary bg-dark-subtle"
+          >
+            <p class="text-start mb-2 small">Alineado a la izquierda</p>
+            <p class="text-center mb-2 small">Alineado al centro</p>
+            <p class="text-end mb-4 small">Alineado a la derecha</p>
+            <p class="fw-bold mb-1">Texto en negrita (Bold)</p>
+            <p class="fw-light small text-secondary">Texto ligero (Light)</p>
+          </div>
+        </div>
+      </section>
+      <!-- 2. Utilidades de CSS (Bordes, Sombras y Espacios)-->
+
+      <section class="d-flex flex-column align-content-center ">
+      <div class="row g-4">
+        <!-- Columna Bordes y Sombras -->
+        <div class="col-md-8">
+            <p class="fw-bold">Bordes y Sombras</p>
+           <div class="p-5 bg-secondary d-flex align-items-center justify-content-start gap-4 rounded shadow-sm">
+    <!-- 1. Sombra Pequeña: Borde grueso y redondeado -->
+    <div class="bg-dark border border-primary border-3 p-4 shadow-sm text-center rounded-3 d-flex align-items-center justify-content-center" style="width: 180px; height: 120px;">
+        <small>Sombra Pequeña</small>
+    </div>
+
+    <!-- 2. Sombra Media: Sin borde izquierdo (border-start-0) -->
+    <div class="bg-dark border border-success border-top border-end border-bottom border-start-0 p-4 shadow text-center d-flex align-items-center justify-content-center" style="width: 180px; height: 120px;">
+        <small>Sombra Media</small>
+    </div>
+
+    <!-- 3. Sombra Grande: Círculo perfecto -->
+    <div class="bg-dark border border-info p-4 shadow-lg rounded-circle text-center d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+        <small>Sombra Grande</small>
+    </div>
+</div>
+        </div>
+
+        <!-- Columna Opacidad -->
+        <div class="col-md-4">
+            <p class="fw-bold">Opacidad</p>
+            <div class="vstack gap-1">
+                <div class="bg-primary p-2 opacity-100 shadow-sm">Opacidad 100%</div>
+                <div class="bg-primary p-2 opacity-75 shadow-sm">Opacidad 75%</div>
+                <div class="bg-primary p-2 opacity-50 shadow-sm">Opacidad 50%</div>
+                <div class="bg-primary p-2 opacity-25 shadow-sm">Opacidad 25%</div>
+            </div>
+        </div>
+    </div>
       </section>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
