@@ -6,9 +6,3 @@ body{
 main{
     flex-grow: 1;
 }
-.caja-sp{
-width: 200px;
-height: 300px;
-background-color: black;
-
-}

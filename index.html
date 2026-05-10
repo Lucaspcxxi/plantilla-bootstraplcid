@@ -99,40 +99,108 @@
       </section>
       <!-- 2. Utilidades de CSS (Bordes, Sombras y Espacios)-->
 
-      <section class="d-flex flex-column align-content-center ">
-      <div class="row g-4">
-        <!-- Columna Bordes y Sombras -->
-        <div class="col-md-8">
+      <section class="d-flex flex-column align-content-center m-4">
+        <p class="display-6">
+          2. Utilidades de CSS (Bordes, Sombras y Espacios)
+        </p>
+        <div class="row g-4">
+          <!-- Columna Bordes y Sombras -->
+          <div class="col-md-8">
             <p class="fw-bold">Bordes y Sombras</p>
-           <div class="p-5 bg-secondary d-flex align-items-center justify-content-start gap-4 rounded shadow-sm">
-    <!-- 1. Sombra Pequeña: Borde grueso y redondeado -->
-    <div class="bg-dark border border-primary border-3 p-4 shadow-sm text-center rounded-3 d-flex align-items-center justify-content-center" style="width: 180px; height: 120px;">
-        <small>Sombra Pequeña</small>
-    </div>
+            <div
+              class="p-5 bg-secondary d-flex align-items-center justify-content-start gap-4 rounded shadow-sm"
+            >
+              <!-- 1. Sombra Pequeña: Borde grueso y redondeado -->
+              <div
+                class="bg-dark border border-primary border-3 p-4 shadow-sm text-center rounded-3 d-flex align-items-center justify-content-center"
+                style="width: 180px; height: 120px"
+              >
+                <small>Sombra Pequeña</small>
+              </div>
 
-    <!-- 2. Sombra Media: Sin borde izquierdo (border-start-0) -->
-    <div class="bg-dark border border-success border-top border-end border-bottom border-start-0 p-4 shadow text-center d-flex align-items-center justify-content-center" style="width: 180px; height: 120px;">
-        <small>Sombra Media</small>
-    </div>
+              <!-- 2. Sombra Media: Sin borde izquierdo (border-start-0) -->
+              <div
+                class="bg-dark border border-success border-top border-end border-bottom border-start-0 p-4 shadow text-center d-flex align-items-center justify-content-center"
+                style="width: 180px; height: 120px"
+              >
+                <small>Sombra Media</small>
+              </div>
 
-    <!-- 3. Sombra Grande: Círculo perfecto -->
-    <div class="bg-dark border border-info p-4 shadow-lg rounded-circle text-center d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
-        <small>Sombra Grande</small>
-    </div>
-</div>
-        </div>
+              <!-- 3. Sombra Grande: Círculo perfecto -->
+              <div
+                class="bg-dark border border-info p-4 shadow-lg rounded-circle text-center d-flex align-items-center justify-content-center"
+                style="width: 120px; height: 120px"
+              >
+                <small>Sombra Grande</small>
+              </div>
+            </div>
+          </div>
 
-        <!-- Columna Opacidad -->
-        <div class="col-md-4">
+          <!-- Columna con Opacidad -->
+          <div class="col-md-4">
             <p class="fw-bold">Opacidad</p>
             <div class="vstack gap-1">
-                <div class="bg-primary p-2 opacity-100 shadow-sm">Opacidad 100%</div>
-                <div class="bg-primary p-2 opacity-75 shadow-sm">Opacidad 75%</div>
-                <div class="bg-primary p-2 opacity-50 shadow-sm">Opacidad 50%</div>
-                <div class="bg-primary p-2 opacity-25 shadow-sm">Opacidad 25%</div>
+              <div class="bg-primary p-2 opacity-100 shadow-sm">
+                Opacidad 100%
+              </div>
+              <div class="bg-primary p-2 opacity-75 shadow-sm">
+                Opacidad 75%
+              </div>
+              <div class="bg-primary p-2 opacity-50 shadow-sm">
+                Opacidad 50%
+              </div>
+              <div class="bg-primary p-2 opacity-25 shadow-sm">
+                Opacidad 25%
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </section>
+
+      <!-- seccion padding y margin-->
+      <section class="d-flex flex-column">
+        <div class="container border-1 rounded-1"></div>
+        <h3>Espaciado (Márgenes y Rellenos)</h3>
+        <p class="small text-secondary mb-4">
+          Clases <code>m-*</code> (margin) y <code>p-*</code> (padding). De 0 a
+          5.
+        </p>
+        <div class="border-2 border rounded-3 p-4">
+          <!-- Ejemplo de padding -->
+          <div class="d-flex align-items-end gap-3 mb-4">
+            <div class="bg-primary">
+              <div class="spacing-inner p-1">p-1</div>
+            </div>
+            <div class="bg-primary">
+              <div class="spacing-inner p-3">p-3</div>
+            </div>
+            <div class="bg-primary">
+              <div class="spacing-inner p-5">p-5</div>
+            </div>
+          </div>
+
+          <!-- con y sin margen-->
+          <div class="d-flex flex-wrap gap-2">
+            <div class="bg-secondary p-2 text-white rounded">
+              Sin Margen Extra
+            </div>
+            <div class="bg-danger p-2 text-white rounded ms-md-5">
+              ms-md-5 (Margen condicional)
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex flex-column">
+        <p class="display-6">4. Tarjetas (Cards) con Flexbox</p>
+       <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
       </section>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
