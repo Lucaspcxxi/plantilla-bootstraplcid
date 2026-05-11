@@ -19,7 +19,7 @@
     <header>
       <nav class="navbar text-bg-warning navbar-expand-lg">
         <div class="container">
-          <a  href="../index.html" id="nav-nar">Plantilla BS</a>
+          <a href="../index.html" id="nav-nar">Plantilla BS</a>
           <button
             class="navbar-toggler"
             data-bs-toggle="collapse"
@@ -46,13 +46,30 @@
     <main class="container my-2 m-4">
       <section>
         <div class="container my-5">
-        <div class="border border-secondary-subtle rounded-3 p-5 text-center">
-          <h1 class="display-4 fw-medium">Estilos de Bootstrap</h1>
-          <p class="text-secondary lead">Una guía visual para aprender clases de diseño, espaciado y componentes.</p>
+          <div class="border border-secondary-subtle rounded-3 p-5 text-center">
+            <h1 class="display-4 fw-medium">Grilla de Bootstrap</h1>
+           <p class="lead mb-0 text-secondary-emphasis">
+            Bootstrap tiene su propio sistema de grillas para crear layouts
+            complejos.
+          </p>
+            </p>
+          </div>
         </div>
-      </div>
       </section>
-       </main>
+      <section class="row align-items-center justify-content-md-center">
+        <div class="col-4"><p>La clase <code>row</code> de Boostrap nos permite crear contendeores divididvos en 12 columnas y asignarles numeros que indicaran cuantos de esos 12 usara cada contenedor que se encuentra en un contenedor padre al cual le asignamos la clase <code>row</code></p></div>
+    
+        <div class="col-md-4">
+          <h2>Ejemplo
+          </h2>
+          <p>esta seccion tiene <code>row</code> y los dos primeros divs ocupan 4 de las doce columnas:
+          <code>col-4</code></p>
+        </div>
+        <div class="col-12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, deserunt sit. Dolore, adipisci sit, quo asperiores deserunt aspernatur rerum earum quam commodi dicta rem, assumenda porro impedit eaque! Dolor, reiciendis?
+        </div>
+      </section>
+    </main>
     <footer class="text-center bg-dark-subtle py-3">
       <p>&copy;Reservados todos los derechos 2026</p>
     </footer>
