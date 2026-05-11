@@ -6,3 +6,8 @@ body{
 main{
     flex-grow: 1;
 }
+#nav-nar{
+    a {color: black;
+    font-weight: bold;
+   text-decoration-line: none;
+}
