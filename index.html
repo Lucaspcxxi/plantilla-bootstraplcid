@@ -156,7 +156,24 @@
           </div>
         </div>
       </section>
+<!-- seccion botones bootstrap -->
+ <article id="buttons" class="container my-4 border-bottom pb-4">
+        <h3 class="mb-4">3. Botones y estados</h3>
 
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <button class="btn btn-light">Prueba</button>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-outline-primary">Outline</button>
+          <button class="btn btn-primary disabled">Deshabilitado</button>
+        </div>
+
+        <div class="d-flex flex-wrap align-items-center gap-2">
+          <button class="btn btn-success btn-lg">Grande</button>
+          <button class="btn btn-warning">Normal</button>
+          <button class="btn btn-danger btn-sm">Pequeño</button>
+          <button class="btn btn-link">Enlace</button>
+        </div>
+      </article>
       <!-- seccion padding y margin-->
       <section class="d-flex flex-column">
         <div class="container border-1 rounded-1"></div>
@@ -190,17 +207,47 @@
           </div>
         </div>
       </section>
-      <section class="d-flex flex-column">
-        <p class="display-6">4. Tarjetas (Cards) con Flexbox</p>
-       <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+      <section class="container my-4 border-bottom pb-4">
+        <h3 class="display-6 p-2 m-2">4. Tarjetas (Cards) con Flexbox</h3>
+        <div class="d-flex flex-column flex-md-row">
+         
+          <div class="card" style="width: 18rem;"> 
+            
+  <img src="./img/pexels-klaus-machtel-2147699903-29716083.jpg" class="card-img-top" alt="imagen de paisaje de cascadas" loading="lazy">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Titulo estilizado</h5>
+    <p class="card-text">Maquetado con flexbox puro de Bootstrap.
+</p>
+    <a href="#" class="btn btn-primary">Ir</a>
   </div>
 </div>
+<div class="card flex-grow-2 h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3>Layout Flexible</h3>
+              <p>
+                Bootstrap permite combinar utilidades de flexbox para crear
+                layouts complejos sin depender de las 12 columnas.
+              </p>
+              <p>
+                Aquí uso <code>flex-grow-1</code> y <code>flex-grow-2</code> en
+                lugar de clases personalizadas.
+              </p>
 
+              <div class="vstack gap-2">
+                <div class="p-3 border d-flex justify-content-between align-items-center rounded">
+                  Item de lista con Badge
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </div>
+                <div class="p-3 border d-flex justify-content-between align-items-center rounded">
+                  Notificaciones
+                  <span class="badge bg-danger rounded-pill">Nuevo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+       
       </section>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
