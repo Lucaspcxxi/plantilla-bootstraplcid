@@ -70,7 +70,7 @@
         </article>
       </section>
       <!-- segunda seccion "Tipos de texto y columnas" -->
-      <section class="d-flex flex-column flex-md-row mb-2">
+      <section class="d-flex flex-column flex-md-row mb-3">
         <article class="container text-center">
           <h3>1. Estilos de Texto y Tipografía</h3>
           <p>
@@ -98,12 +98,11 @@
         </div>
       </section>
       <!-- 2. Utilidades de CSS (Bordes, Sombras y Espacios)-->
-
       <section class="d-flex flex-column align-content-center m-4">
         <p class="display-6">
           2. Utilidades de CSS (Bordes, Sombras y Espacios)
         </p>
-        <div class="row g-4">
+        <div class="row g-4 w-100">
           <!-- Columna Bordes y Sombras -->
           <div class="col-md-8">
             <p class="fw-bold">Bordes y Sombras</p>
@@ -113,7 +112,7 @@
               <!-- 1. Sombra Pequeña: Borde grueso y redondeado -->
               <div
                 class="bg-dark border border-primary border-3 p-4 shadow-sm text-center rounded-3 d-flex align-items-center justify-content-center"
-                style="width: 180px; height: 120px"
+                style="width: 24%; height: 22%"
               >
                 <small>Sombra Pequeña</small>
               </div>
@@ -121,7 +120,7 @@
               <!-- 2. Sombra Media: Sin borde izquierdo (border-start-0) -->
               <div
                 class="bg-dark border border-success border-top border-end border-bottom border-start-0 p-4 shadow text-center d-flex align-items-center justify-content-center"
-                style="width: 180px; height: 120px"
+                style="width: 24%; height: 24%"
               >
                 <small>Sombra Media</small>
               </div>
@@ -129,7 +128,7 @@
               <!-- 3. Sombra Grande: Círculo perfecto -->
               <div
                 class="bg-dark border border-info p-4 shadow-lg rounded-circle text-center d-flex align-items-center justify-content-center"
-                style="width: 120px; height: 120px"
+                style="width: 24%; height: 24%"
               >
                 <small>Sombra Grande</small>
               </div>
@@ -157,7 +156,7 @@
         </div>
       </section>
 <!-- seccion botones bootstrap -->
- <article id="buttons" class="container my-4 border-bottom pb-4">
+ <article class="container m-4 border-bottom pb-4">
         <h3 class="mb-4">3. Botones y estados</h3>
 
         <div class="d-flex flex-wrap gap-2 mb-3">
@@ -249,6 +248,97 @@
         </div>
        
       </section>
+
+    <!-- seccion de tablas, alerts y progress  -->
+     <article class="container my-4">
+        <h3>5. Tablas y Feedback</h3>
+        <div class="row g-4">
+          <!-- Columna izquierda: feedback + progress -->
+          <div class="col-md-6">
+            <p>
+              Las tablas en Bootstrap son responsive si usas la clase
+              <code>.table-responsive</code>, creando un scroll horizontal
+              dentro de la tabla.
+            </p>
+            <div class="alert alert-success" role="alert">
+              <h2>¡Importante!</h2>
+              Dominar <code>d-flex</code>, <code>justify-content</code> y
+              <code>align-items</code> es la clave en el desarrollo moderno.
+            </div>
+            <p>A continuación tenemos una progress-bar:</p>
+           <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
+</div>
+                75% progress
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: tabla -->
+          <div class="col-md-6">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Propiedad</th>
+                    <th>Clase Bootstrap</th>
+                    <th>Uso Responsivo</th>
+                    <th>Descripción Técnica</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Bordes</td>
+                    <td><code>.border-dashed</code></td>
+                    <td><code>.border-md-0</code></td>
+                    <td>
+                      Bootstrap no tiene dashed nativo; requiere CSS extra o
+                      estilos inline.
+                    </td>
+                    <td>Personalizado</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Grilla</td>
+                    <td><code>.col-md-8</code></td>
+                    <td><code>.col-12</code></td>
+                    <td>
+                      Sistema de 12 columnas ideal para anchos proporcionales
+                      (ej: 8 y 4).
+                    </td>
+                    <td>Nativo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Visibilidad</td>
+                    <td><code>.d-none</code></td>
+                    <td><code>.d-lg-block</code></td>
+                    <td>
+                      Oculta o muestra elementos según el breakpoint (xs, sm,
+                      md, lg, xl).
+                    </td>
+                    <td>Nativo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Tablas</td>
+                    <td><code>.table-responsive</code></td>
+                    <td><code>Automático</code></td>
+                    <td>
+                      Permite scroll horizontal en pantallas pequeñas para no
+                      romper el layout.
+                    </td>
+                    <td>Estructural</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
       <p>&copy;Reservados todos los derechos 2026</p>
