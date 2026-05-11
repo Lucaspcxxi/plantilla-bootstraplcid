@@ -43,7 +43,38 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- seccion de contactos (formularios) -->
+<section class="container border border-secondary rounded p-4 my-5 text-light">
+    
+    <div class="row g-3">
+        <!-- Fila de Nombre e Email -->
+        <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-transparent text-light border-secondary" placeholder="Ej: Juan">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control bg-transparent text-light border-secondary" placeholder="test@ejemplo.com">
+        </div>
+
+        <!-- Fila de Mensaje -->
+        <div class="col-12 mt-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control bg-transparent text-light border-secondary" rows="3" placeholder="agrega aqui tu mensaje"></textarea>
+        </div>
+
+        <!-- Switch y Botón enviar -->
+        <div class="col-12 mt-3">
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="switchTerminos">
+                <label class="form-check-label" for="switchTerminos">Aceptar términos (Switch)</label>
+            </div>
+            <button class="btn btn-outline-success px-4">Enviar</button>
+        </div>
+    </div>
+</section>
+    </main>
      <footer class="text-center bg-dark-subtle py-3">
       <p>&copy;Reservados todos los derechos 2026</p>
     </footer>
@@ -54,3 +85,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  </html>
